@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="sport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="equipes" type="EquipesType"/>
+                <xs:element name="stades" type="StadesType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Type pour les équipes -->
+    <xs:complexType name="EquipesType">
+        <xs:sequence>
+            <xs:element name="equipe" type="EquipeType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EquipeType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="ville" type="xs:string"/>
+            <xs:element name="entraineur" type="xs:string"/>
+            <xs:element name="fondation" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <!-- Type pour les stades -->
+    <xs:complexType name="StadesType">
+        <xs:sequence>
+            <xs:element name="stade" type="StadeType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="StadeType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="ville" type="xs:string"/>
+            <xs:element name="capacite" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

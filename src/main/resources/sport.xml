@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sport>
+    <equipes>
+        <equipe id="1">
+            <nom>Real Madrid</nom>
+            <ville>Madrid</ville>
+            <entraineur>Xabi Alonso</entraineur>
+            <fondation>1902</fondation>
+        </equipe>
+        <equipe id="2">
+            <nom>Paris Saint-Germain</nom>
+            <ville>Paris</ville>
+            <entraineur>Luis Enrique</entraineur>
+            <fondation>1970</fondation>
+        </equipe>
+        <equipe id="3">
+            <nom>Juventus</nom>
+            <ville>Turin</ville>
+            <entraineur>Igor Tudor</entraineur>
+            <fondation>1897</fondation>
+        </equipe>
+    </equipes>
+
+    <stades>
+        <stade id="s1">
+            <nom>Santiago Bernabeu</nom>
+            <ville>Madrid</ville>
+            <capacite>80354</capacite>
+        </stade>
+        <stade id="s2">
+            <nom>Parc des Princes</nom>
+            <ville>Paris</ville>
+            <capacite>48583</capacite>
+        </stade>
+        <stade id="s3">
+            <nom>Allianz Stadium</nom>
+            <ville>Turin</ville>
+            <capacite>41507</capacite>
+        </stade>
+    </stades>
+
+</sport>
