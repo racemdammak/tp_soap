@@ -23,7 +23,7 @@
 
     <stades>
         <stade id="s1">
-            <nom>Santiago Bernabeu</nom>
+            <nom>Santiago Bernabéu</nom>
             <ville>Madrid</ville>
             <capacite>80354</capacite>
         </stade>
